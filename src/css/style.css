@@ -1,0 +1,348 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+:root{
+    --background-color: #ceffe7;
+}
+
+.administration{
+    display: grid;
+    grid-template: 30vh auto 5vh /repeat(4, 20vw 27.5vw 27.5vw 25vw);
+    grid-template-areas: 
+    "sidebar header header header"
+    "sidebar main  main aside"
+    "footer footer footer  footer";
+}
+
+.sidebar{
+    grid-area: sidebar;
+    background-color: rgb(55, 99, 99);
+    display: grid;
+    justify-content:center;
+    align-items: flex-start;
+    
+}
+
+.sidebar>.ajust{
+    height: 80vh;
+    width: 100%;
+    display: grid;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.ajust h2{
+    font-size: 32px;
+    margin-left: .2rem;
+    text-transform: uppercase;
+}
+
+.ajust li{
+    line-height: 2;
+    color: #ddd;
+}
+
+.ajust a{
+    text-decoration: none;
+    color: #ddd;
+    font-size: 1.2rem;
+    padding: 1rem;
+    transition: 1s;
+}
+
+.ajust a:hover{
+    color: #374914;
+}
+
+.sidebar ul{
+    list-style: none;
+}
+
+.sidebar #title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ddd;
+}
+
+.header{
+    grid-area: header;
+    background-color: rgb(79, 13, 99);
+    grid-column-start: 2;
+    display: grid;
+    justify-content: space-around;
+    grid-template-columns: 32rem 32rem;
+    grid-template-rows: 15rem;
+    color: #ddd;
+   
+}
+#search{
+    width: 30rem;
+    padding: .5rem;
+    border-radius: 2rem;
+    text-align: center;
+    font-size: 1rem;
+    border: 1px solid #bbb
+}
+.min-conteiner{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 2rem;
+    justify-content: space-between;
+    gap:2rem;
+}
+
+.search{
+    position: relative;
+    width: 34rem;
+    height: 3rem;
+    margin-top: 1.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.search button{
+    color: #333;
+    background-color: #fff;
+    position: absolute;
+    width: 4rem;
+    height: 2rem;
+    left: -2px;
+    box-shadow: none;
+    margin-left: 5px;
+    margin-top: 2px;
+    border-radius: 3rem;
+}
+
+.search button:hover{
+    background-color: #fff;
+    color: #333;
+}
+
+.greet{
+    width: 34rem;
+    height: 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: .5;
+}
+
+.perfiphoto> label [type="file"]{
+   display: none;
+}
+
+.perfiphoto> label {
+    margin-top: 1rem;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 2.5rem;
+}
+
+.perfiphoto>label>img{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 1.5rem;
+    margin-top: 1rem;
+}
+
+.grupbtn{
+    display: grid;
+    grid-template-columns: 30rem;
+    grid-template-rows: 4rem 3rem;
+    gap: .6rem;
+}
+
+.notifications{
+    margin-top: 1rem;
+    display: flex;
+    width: 30rem;
+    height: 4rem;
+    justify-content: center;
+    align-items: center;
+}
+.notifications > label>[type="file"]{
+    display: none;
+}
+
+.notifications p{
+    margin: 2rem;
+    color: #bbb;
+}
+ 
+.notifications h3{
+    margin-left: 2rem;
+}
+
+.btn{
+    margin-top: 1.5rem;
+    display: flex;
+    width: 30rem;
+    height: 3rem;
+    justify-content: center;
+    align-items: center;
+}
+
+[type="submit"], button{
+    margin-left: 1rem ;
+    padding: .6rem 2rem;
+    border: none;
+    background-color: #9acd32;
+    border-radius: 1rem;
+    box-shadow: 1px 4px #333;
+    font-family: 'Open Sans', sans-serif;
+    cursor: pointer;
+    transition: 500ms ;
+}
+
+[type="submit"]:hover, button:hover{
+    background-color: #374914;
+    color: #ddd;
+}
+
+
+.notifications>label{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    margin: 5px;
+
+}
+
+.notifications>label>img{
+    width:4rem ;
+    height: 4rem;
+    border-radius: 50%;
+}
+
+.main{
+    grid-area: main;
+    background-color: var(--background-color);
+    grid-column-start: -3;
+    grid-row-start: -1; 
+    padding: 2rem;
+    grid-row-start: 2;
+    grid-column-start: 4;
+    grid-column-end: 2;
+   
+
+}
+
+.main-conteiner{
+    display: grid;
+    grid-template: 15rem 15rem 15rem 15rem/repeat(2, 22rem);
+    grid-template-areas: 
+    "box1 box2"
+    "box3 box4"
+    "box5 box6";
+    gap: 1rem;
+    justify-content: center;
+}
+
+.box1{
+    grid-area: box1;
+}
+
+.box2{
+    grid-area: box2;
+}
+
+.box3{
+    grid-area: box3;
+}
+
+.box4{
+    grid-area: box4;
+}
+
+.box5{
+    grid-area: box5;
+}
+
+.box6{
+    grid-area: box6;
+}
+
+.divmain{
+    background-color: rgb(223, 179, 179);
+    border-radius: .5rem;
+    border-left: 10px solid #9acd32;
+    box-shadow: 2px 3px 5px #444;
+    padding: 1rem;
+    position: relative;
+}
+
+.especial{
+    position:  absolute;
+    right: 1rem;
+    bottom: 1rem;
+    cursor: pointer;
+}
+
+.aside{
+    width: 25vw;
+    grid-area: aside;
+    padding: 2rem;
+    background-color: var(--background-color);
+    display: grid;
+    gap: 2rem;
+    grid-row-start: 2;
+    grid-column-start: 4;
+    text-align: center;
+}
+
+.asid{
+    background-color: rgb(69, 193, 202);
+    padding: 1rem;
+    height: auto;
+    border-radius: 1rem;
+}
+.asid> div{
+    margin-top: 1rem;
+}
+
+.r1{
+    margin-top: 0;
+}
+
+.asid .r2{
+    border-top: 2px solid ;
+    border-bottom: 2px solid;
+}
+
+.asid> .img1 > img{
+    width: 4vw;
+    height: 4vw;
+    border-radius: 50%;
+}
+.asid>.img1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.asid> .img1> h3{
+    margin: 1rem;
+}
+
+.footer{
+    grid-area: footer;
+    background-color: rgb(73, 55, 73);
+    text-align: center;
+    color: #ddd;
+}
+
+.footer> h3{
+    margin-top: .5rem;
+}
+
+path{
+    width: 1rem;
+    background-color: azure;
+}
