@@ -245,29 +245,6 @@
     justify-content: center;
 }
 
-.box1{
-    grid-area: box1;
-}
-
-.box2{
-    grid-area: box2;
-}
-
-.box3{
-    grid-area: box3;
-}
-
-.box4{
-    grid-area: box4;
-}
-
-.box5{
-    grid-area: box5;
-}
-
-.box6{
-    grid-area: box6;
-}
 
 .divmain{
     background-color: rgb(223, 179, 179);
