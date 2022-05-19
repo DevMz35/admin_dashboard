@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(87, 40, 63);
+}
+
+.conteiner{
+    margin: 3rem auto;
+    width: 30vw;
+    height: auto;
+    background-color: rgb(19, 85, 85);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.conteiner h2{
+    width: 100%;
+    border-bottom: 4px solid orangered;
+    text-align: center;
+}
+.to-do{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.to-do label{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(31, 94, 31);
+    width: auto;
+    height: 2rem;
+    margin: 2rem;
+    padding: 1rem;
+    border-radius: 1rem;
+
+}
+
+label [type='checkbox']:checked + p{
+    text-decoration: line-through;
+    color: orangered;
+}
+
+.to-do p{
+    margin-left: 2rem;
+}
+
+#new-list{
+    width: 26vw;
+    height: 2.4rem;
+    border-radius: 1rem;
+    border: none;
+    text-align: center;
+}
+
+#new-list:focu{
+    text-align: center;
+}
+
+#btn{
+    width: 10rem;
+    height: 2rem;
+    border-radius: 1rem;
+    border: none;
+    margin: 1rem;
+    background-color: orangered;
+}
+
+.new-list{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.new-list label{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(31, 94, 31);
+    width: auto;
+    height: 2rem;
+    margin: 1rem;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.new-list button{
+    width: 3rem;
+    height: 1.5rem;
+    margin-left: 1rem;
+    background: red;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.new-list button:hover{
+    background-color: #278585;
+}
+
+.new-list p{
+    margin-left: 1rem;
+}

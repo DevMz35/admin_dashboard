@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+section{
+    text-align: center;
+}
+
+.game-conteiner{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    margin: 2rem auto;
+    width: 15rem;
+}
+
+.game{
+    width: 5rem;
+    height: 5rem;
+    border: 2px solid;
+    box-shadow: 0 0 0 3px #0000;
+    cursor: pointer;
+    font-size: 3rem;
+    padding: 1rem;
+}
+
+.game:nth-child(1),
+.game:nth-child(2),
+.game:nth-child(3){
+   border-top: none;
+}
+
+.game:nth-child(1),
+.game:nth-child(4),
+.game:nth-child(7){
+   border-left: none;
+}
+
+.game:nth-child(7),
+.game:nth-child(8),
+.game:nth-child(9){
+   border-bottom: none;
+}
+
+.game:nth-child(3),
+.game:nth-child(6),
+.game:nth-child(9){
+   border-right: none;
+}
+
+.game.x::before,
+.game.x::after{
+    background-color: red;
+    
+}

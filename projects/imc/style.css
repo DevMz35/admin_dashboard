@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(131, 44, 10);
+}
+
+.imc{
+    width: 30rem;
+    height: 50rem;
+    background-color: rgb(19, 19, 87);
+    margin: 2rem auto;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 1rem;
+    color: #ddd;
+}
+
+.titulo{
+    width: 80%;
+    border-bottom: 3px solid rgb(194, 54, 54);
+    height: 3rem;
+    margin: 3rem;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.nome, .peso, .altura , label{
+    width: 20rem;
+    height: 3rem;
+    background-color: rgb(87, 105, 87);
+    margin-bottom: 2rem;
+    border: none;
+    margin-left: 2rem;
+    text-align: center;
+    font-size: 2rem;
+    color: #000;
+}
+
+label{
+    background: rgb(19, 19, 87);
+}
+
+.btn{
+    width: 10rem;
+    height: 3rem;
+    border: none;
+    border-radius: .5rem;
+    background: rgb(199, 47, 1);
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+
+.resultado{
+    width: 90%;
+    height: 13rem;
+    background-color: rgb(18, 11, 20);
+    margin-left: 2rem;
+    border-radius: 1rem;
+}
