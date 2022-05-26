@@ -48,8 +48,8 @@ section{
    border-right: none;
 }
 
-.game.x::before,
-.game.x::after{
+ .x::before,
+ .x::after{
     background-color: red;
     
 }
